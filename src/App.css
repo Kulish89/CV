@@ -6,3 +6,8 @@
   margin: 0 auto;
   padding: 20px 40px;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 20px;
+  }
+}

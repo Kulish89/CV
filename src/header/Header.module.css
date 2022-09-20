@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.header_logo {
+  color: white;
+}
+
 .nav {
   border: 2px solid White;
   border-radius: 4px;
@@ -27,4 +31,12 @@
 }
 .nav_item a:hover {
   color: blue;
+}
+@media (max-width: 768px) {
+  .header_logo {
+    display: none;
+  }
+  .header_wrapper {
+    justify-content: center;
+  }
 }

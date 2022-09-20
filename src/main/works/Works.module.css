@@ -76,3 +76,13 @@
 .work_description {
   background-color: rgb(188, 146, 241);
 }
+@media (max-width: 768px) {
+  .worksBlock_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .work {
+    width: 200px;
+  }
+}

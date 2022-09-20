@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className={s.header} id="header">
       <div className={`wrapper ${s.header_wrapper}`}>
-        <div>LOGO!My awesome logo!</div>
+        <div className={s.header_logo}>LOGO!My awesome logo!</div>
         <nav className={s.nav}>
           <ul className={s.nav_list}>
             <li className={s.nav_item}>

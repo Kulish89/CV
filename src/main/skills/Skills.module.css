@@ -12,13 +12,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 15px;
 }
 .skill {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 300px;
-  /* border: 1px solid white; */
 }
 .skill_icon {
   width: 40px;
@@ -27,4 +27,11 @@
 .skill_icon img {
   width: 100%;
   fill: white;
+}
+@media (max-width: 768px) {
+  .skillsBlock_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
