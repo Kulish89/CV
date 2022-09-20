@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/CV/static/css/main.23047de1.css",
+    "main.js": "/CV/static/js/main.760545f6.js",
+    "static/media/shelter.png": "/CV/static/media/shelter.a7c2bb9f7fa302fa9496.png",
+    "static/media/todolist.png": "/CV/static/media/todolist.1ffeec3468c62122e207.png",
+    "static/media/js-icon.svg": "/CV/static/media/js-icon.4ee7ada1fe01071b565618c24dac9b21.svg",
+    "static/media/phone-icon.svg": "/CV/static/media/phone-icon.2729fea7ebdb61c5930772737989f80d.svg",
+    "static/media/html-icon.svg": "/CV/static/media/html-icon.daf845acfd50efc159fab055c36a7bd6.svg",
+    "static/media/linkedin-icon.svg": "/CV/static/media/linkedin-icon.90424c1add3128812cf8f4b6e07521cc.svg",
+    "static/media/email-icon.svg": "/CV/static/media/email-icon.848fce4198d7d708e30547c1db45a42a.svg",
+    "static/media/react-icon.svg": "/CV/static/media/react-icon.faa974fa0397a4da594696afca62d414.svg",
+    "index.html": "/CV/index.html",
+    "main.23047de1.css.map": "/CV/static/css/main.23047de1.css.map",
+    "main.760545f6.js.map": "/CV/static/js/main.760545f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23047de1.css",
+    "static/js/main.760545f6.js"
+  ]
+}
