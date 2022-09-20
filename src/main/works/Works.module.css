@@ -1,0 +1,78 @@
+.worksBlock {
+  background-color: rgb(59, 7, 122);
+  color: rgb(59, 7, 122);
+}
+.worksBlock_wrapper {
+  background-color: white;
+}
+
+.worksBlock_content {
+  display: flex;
+  justify-content: space-around;
+}
+.work {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 3px rgba(83, 46, 193, 0.2);
+}
+.work_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+._shelter::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/shelter.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+  opacity: 0.8;
+  z-index: -5;
+  border-radius: 10px 10px 0 0;
+}
+._todolist::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/todolist.png");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2px);
+  opacity: 0.8;
+
+  z-index: -5;
+  border-radius: 10px 10px 0 0;
+}
+
+.work_link {
+  color: rgb(188, 146, 241);
+  padding: 5px 15px;
+  border: 2px solid rgb(59, 7, 122);
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: rgba(59, 7, 122, 0.5);
+  transition: 0.5s;
+}
+.work_link:hover {
+  background-color: rgba(59, 7, 122, 0.9);
+  color: white;
+  transform: scale(1.1, 1.1);
+}
+.work_title {
+  background-color: rgb(188, 146, 241);
+}
+.work_description {
+  background-color: rgb(188, 146, 241);
+}

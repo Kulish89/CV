@@ -1,0 +1,30 @@
+.header {
+  background-color: rgb(59, 7, 122);
+}
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  border: 2px solid White;
+  border-radius: 4px;
+  margin: 0;
+  padding: 5px;
+  display: flex;
+}
+.nav_list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+}
+.nav_item a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.nav_item a:hover {
+  color: blue;
+}

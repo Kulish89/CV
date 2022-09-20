@@ -1,0 +1,32 @@
+.footer {
+  color: white;
+  /* height: 80px; */
+  background-image: url(https://thumbs.gfycat.com/ScrawnyCapitalGallinule-size_restricted.gif);
+  display: flex;
+  align-items: center;
+}
+
+.contacts_list {
+  display: flex;
+  list-style: none;
+  width: 400px;
+  justify-content: space-between;
+}
+.contacts_item {
+  color: white;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  transition: 0.5s;
+}
+.contacts_item img {
+  width: 30px;
+}
+.contacts_item:hover {
+  transform: scale(1.2, 1.2);
+}

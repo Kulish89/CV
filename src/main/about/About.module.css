@@ -1,0 +1,19 @@
+.aboutBlock {
+  background-image: url(https://thumbs.gfycat.com/ScrawnyCapitalGallinule-size_restricted.gif);
+}
+.aboutBlock_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_description {
+  max-width: 50%;
+}
+.about_image {
+  width: 30%;
+}
+.about_image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}

@@ -1,0 +1,30 @@
+.skillsBlock {
+  background-color: rgb(59, 7, 122);
+}
+.skillBlock_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.skillsBlock_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  /* border: 1px solid white; */
+}
+.skill_icon {
+  width: 40px;
+  height: 40px;
+}
+.skill_icon img {
+  width: 100%;
+  fill: white;
+}

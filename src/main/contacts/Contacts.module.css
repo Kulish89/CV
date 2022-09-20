@@ -1,0 +1,49 @@
+.contacts {
+  background-color: rgb(59, 7, 122);
+}
+.skillBlock_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillsBlock_form_wrapper {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+input {
+  width: 100%;
+  outline: none;
+  border: 1px solid blue;
+  border-radius: 2px;
+  background-color: rgb(199, 190, 250);
+}
+textarea {
+  width: 100%;
+  resize: none;
+  background-color: rgb(199, 190, 250);
+}
+.form_button {
+  color: rgb(188, 146, 241);
+  padding: 5px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(59, 7, 122, 0.5);
+  transition: 0.5s;
+}
+
+.form_button:hover {
+  background-color: rgba(59, 7, 122, 0.9);
+  color: white;
+  outline: none;
+  transform: scale(1.1, 1.1);
+}
