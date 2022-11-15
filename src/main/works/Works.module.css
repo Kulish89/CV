@@ -1,88 +1,169 @@
 .worksBlock {
-  background-color: rgb(59, 7, 122);
-  color: rgb(59, 7, 122);
+  font-family: "Montserrat";
+  padding: 60px 0;
+  border-bottom: solid 1px black;
 }
 .worksBlock_wrapper {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.worksBlock_title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #c4cfde;
+  margin: 0px;
+  padding: 0;
+}
+
+.worksBlock_subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f9004d;
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin: 0;
 }
 
 .worksBlock_content {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
 }
+
+/* ============================================================================= */
+
 .work {
-  width: 300px;
+  flex: 0 1 40%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px 3px rgba(83, 46, 193, 0.2);
 }
-.work_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 300px;
+
+.inner {
+  padding: 30px;
+  padding-bottom: 34px;
   position: relative;
-  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  position: relative;
 }
-._shelter::before {
-  content: " ";
+.inner::before {
+  content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/images/shelter.png");
-  background-size: cover;
-  position: absolute;
+  border-radius: 20px;
   top: 0;
   left: 0;
-  filter: blur(2px);
-  opacity: 0.8;
-  z-index: -5;
-  border-radius: 10px 10px 0 0;
+  background: linear-gradient(to right bottom, #212428, #16181c);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s all ease-in-out;
 }
-._todolist::before {
-  content: " ";
-  width: 100%;
-  height: 100%;
-  background-image: url("../../assets/images/todolist.png");
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: blur(2px);
-  opacity: 0.8;
-
-  z-index: -5;
-  border-radius: 10px 10px 0 0;
+.inner:hover.inner::before {
+  opacity: 1;
+}
+.inner:hover .work_imageLink img {
+  transform: scale(1.07, 1.07);
+}
+.work_imageWrapper {
+  box-sizing: border-box;
+  margin-bottom: 25px;
 }
 
-.work_link {
-  color: rgb(188, 146, 241);
-  padding: 5px 15px;
-  border: 2px solid rgb(59, 7, 122);
-  border-radius: 3px;
+.work_imageLink {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: none;
   text-decoration: none;
-  background-color: rgba(59, 7, 122, 0.5);
-  transition: 0.5s;
+  transition: all 0.4s ease-in-out 0s;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 0;
 }
-.work_link:hover {
-  background-color: rgba(59, 7, 122, 0.9);
-  color: white;
-  transform: scale(1.1, 1.1);
+.work_imageLink img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.4s all ease-in-out;
 }
-.work_title {
-  background-color: rgb(188, 146, 241);
+
+.description_title {
+  margin: 0;
 }
-.work_description {
-  background-color: rgb(188, 146, 241);
+.description_link {
+  display: block;
+  color: #c4cfde;
+  font-weight: 500;
+  font-family: "Poppins";
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+  position: relative;
+  transition: 0.4s all ease-in-out;
 }
+
+.description_link i {
+  font-size: 1;
+  position: relative;
+  top: 10px;
+  transition: 0.4s all ease-in-out;
+  opacity: 0;
+  font-style: normal;
+}
+.description_link i::before {
+  color: #c4cfde;
+  transition: 0.4s all ease-in-out;
+  content: "<";
+  text-transform: uppercase;
+}
+.description_link:hover {
+  color: #ff014f;
+}
+.description_link:hover i {
+  opacity: 1;
+  top: 0px;
+}
+.description_link:hover i::before {
+  color: #ff014f;
+}
+.description_text {
+  margin: 0;
+  color: #c4cfde;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* ========================================================================== */
+
 @media (max-width: 768px) {
   .worksBlock_content {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
   }
   .work {
-    width: 200px;
+    max-width: 75%;
+  }
+  .worksBlock_title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .work {
+    max-width: 90%;
   }
 }

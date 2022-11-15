@@ -1,38 +1,40 @@
 import s from "./Footer.module.css";
-import phone from "../assets/images/phone-icon.svg";
-import email from "../assets/images/email-icon.svg";
+import codewars from "../assets/images/codewars-icon.svg";
+import github from "../assets/images/github-icon.svg";
 import linkedin from "../assets/images/linkedin-icon.svg";
 const Footer = () => {
   return (
-    <footer className={s.footer} id="contacts">
+    <footer className={s.footer}>
       <div className={"wrapper " + s.footer_wrapper}>
-        <h2 className={s.footer_title}> Andrey Kulish</h2>
-        <div className={s.footer_contacts}>
-          <ul className={s.contacts_list}>
-            <li>
-              <a href="tel:+375297825777" className={s.contacts_item}>
-                <span>Phone</span> <img src={phone} alt="" />
+        <div className={s.footer_content}>
+          <ul className={s.footer_list}>
+            <li className={s.footer_listItem}>
+              <a
+                href="https://www.codewars.com/users/Kulish89"
+                className={s.footer_link}
+              >
+                <span>Phone</span> <img src={codewars} alt="" />
               </a>
             </li>
-            <li>
+            <li className={s.footer_listItem}>
               <a
                 href="mailto:andreykulish89@gmail.com"
-                className={s.contacts_item}
+                className={s.footer_link}
               >
-                <span>Email</span> <img src={email} alt="" />
+                <span>GIT</span> <img src={github} alt="" />
               </a>
             </li>
-            <li>
+            <li className={s.footer_listItem}>
               <a
                 href="https://www.linkedin.com/in/andrey-kulish-47a973174/"
-                className={s.contacts_item}
+                className={s.footer_link}
               >
                 <span>LinkedIn</span> <img src={linkedin} alt="" />
               </a>
             </li>
           </ul>
         </div>
-        <span>@2022 All rights reserved</span>
+        <p>@2022 produced by Kulish Andrey</p>
       </div>
     </footer>
   );

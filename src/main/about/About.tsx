@@ -1,20 +1,19 @@
 import React from "react";
 import style from "./About.module.css";
-
+import mainPhoto from "../../assets/images/myphoto.jpg";
 export const About = () => {
   return (
-    <section className={style.aboutBlock}>
-      <div className={`wrapper ${style.aboutBlock_wrapper}`}>
-        <div className={style.about_description}>
-          <span>Hi there!</span>
-          <h1>My name is Andrey Kulish</h1>
-          <p> I am a Frontend Developer!</p>
+    <section className={style.about}>
+      <div className={`wrapper ${style.about_wrapper}`}>
+        <div className={style.aboutDescription}>
+          <p className={style.aboutDescription_subtitle}>Welcome to my page</p>
+          <h1 className={style.aboutDescription_title}>
+            Hi, I'm <span>Andrey Kulish</span>
+          </h1>
+          <p className={style.aboutDescription_text}> a Frontend Developer!</p>
         </div>
-        <div className={style.about_image}>
-          <img
-            src="https://sun9-42.userapi.com/impf/c629225/v629225577/10c96/pnQXlHwpsak.jpg?size=604x403&quality=96&sign=7d514655cb2e379bf32d8b83a863fc34&type=album"
-            alt="My photo"
-          />
+        <div className={style.aboutImage}>
+          <img src={mainPhoto} alt="My avatar" />
         </div>
       </div>
     </section>

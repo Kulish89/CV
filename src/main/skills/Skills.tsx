@@ -2,36 +2,45 @@ import React from "react";
 import { Skill } from "./Skill";
 import style from "./Skills.module.css";
 import html from "../../assets/images/html-icon.svg";
+import css from "../../assets/images/css-icon.svg";
 import js from "../../assets/images/js-icon.svg";
+import ts from "../../assets/images/typescript-icon.svg";
 import react from "../../assets/images/react-icon.svg";
+import redux from "../../assets/images/redux-icon.svg";
 
+const skills = [
+  { title: "html", percent: "90%", icon: html },
+  { title: "css", percent: "80%", icon: css },
+  { title: "javascript", percent: "80%", icon: js },
+  { title: "typescript", percent: "60%", icon: ts },
+  {
+    title: "react",
+    percent: "80%",
+    icon: react,
+  },
+  {
+    title: "redux",
+    percent: "75%",
+    icon: redux,
+  },
+];
 export const Skills = () => {
   return (
     <section className={style.skillsBlock} id="skills">
       <div className={`wrapper ${style.skillBlock_wrapper}`}>
-        <h2 className={style.skillsBlock_title}>My skills!</h2>
+        <div>
+          <p className={style.skillsBlock_subtitle}>my knowledges</p>
+          <h2 className={style.skillsBlock_title}>My development skill</h2>
+        </div>
         <div className={style.skillsBlock_content}>
-          <Skill
-            title={"HTML/CSS"}
-            description={
-              "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-            }
-            url={html}
-          />
-          <Skill
-            title={"JS/TS"}
-            description={
-              "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-            }
-            url={js}
-          />
-          <Skill
-            title={"REACT"}
-            description={
-              "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
-            }
-            url={react}
-          />
+          {skills.map((skill, index) => (
+            <Skill
+              key={index}
+              title={skill.title}
+              percent={skill.percent}
+              icon={skill.icon}
+            />
+          ))}
         </div>
       </div>
     </section>

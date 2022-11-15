@@ -4,18 +4,25 @@ import style from "./Skills.module.css";
 
 type SkillPropsType = {
   title: string;
-  description: string;
-  url: string;
+  percent: string;
+  icon: string;
 };
 
-export const Skill = ({ title, description, url }: SkillPropsType) => {
+export const Skill = ({ title, percent, icon }: SkillPropsType) => {
   return (
     <div className={style.skill}>
-      <div className={style.skill_icon}>
-        <img src={url} alt="icon" />
+      <div className={style.skill_description}>
+        <h6 className={style.skill_title}>{title}</h6>
+        <div className={style.skill_icon}>
+          <img src={icon} alt="icon" />
+        </div>
       </div>
-      <h3 className={style.skill_title}>{title}</h3>
-      <p className={style.skill_description}>{description}</p>
+
+      <div className={style.progress}>
+        <div className={style.progress_bar} style={{ width: percent }}>
+          <span className={style.progress_percent}>{percent}</span>
+        </div>
+      </div>
     </div>
   );
 };

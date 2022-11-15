@@ -1,24 +1,34 @@
 import React from "react";
-import { title } from "process";
 import style from "./Works.module.css";
 
-type SkillPropsType = {
+type WorkPropsType = {
   title: string;
   description: string;
-  mod: string;
   href: string;
+  image: string;
 };
 
-export const Work = ({ title, description, mod, href }: SkillPropsType) => {
+export const Work = ({ title, description, image, href }: WorkPropsType) => {
   return (
-    <div className={style.work} id="projects">
-      <div className={`${style.work_image} ${mod}`}>
-        <a className={style.work_link} href={href} target="_blank">
-          Show more
-        </a>
+    <div className={style.work}>
+      <div className={style.inner}>
+        <div className={style.work_imageWrapper}>
+          <a className={style.work_imageLink} href={href} target="_blank">
+            <img src={image} alt="image of site"></img>
+          </a>
+        </div>
+        <div className={style.description}>
+          <div>
+            <h4 className={style.description_title}>
+              <a className={style.description_link} href={href} target="_blank">
+                {title}
+                <i className={"fa fa-play"}></i>
+              </a>
+            </h4>
+            <p className={style.description_text}>{description}</p>
+          </div>
+        </div>
       </div>
-      <h3 className={style.work_title}>{title}</h3>
-      <p className={style.work_description}>{description}</p>
     </div>
   );
 };

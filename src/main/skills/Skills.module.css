@@ -1,37 +1,121 @@
 .skillsBlock {
-  background-color: rgb(59, 7, 122);
+  font-family: "Montserrat";
+  padding: 40px 0;
+  border-bottom: solid 1px black;
 }
 .skillBlock_wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
-
+.skillsBlock_subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f9004d;
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin: 0;
+}
+.skillsBlock_title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #c4cfde;
+  margin: 0px;
+  padding: 0;
+}
 .skillsBlock_content {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
 }
 .skill {
+  max-width: 70%;
+  margin: 0 auto;
+}
+.skill_title {
+  margin: 0;
+  color: #c3cedd;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  font-weight: 400;
+  text-align: left;
+}
+.skill_description {
+  margin: 30px 0 5px 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  max-width: 300px;
 }
 .skill_icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 .skill_icon img {
   width: 100%;
-  fill: white;
+}
+.progress {
+  width: 100%;
+  height: 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 3px;
+  background: #212428;
+  box-shadow: inset 8px 8px 16px rgb(0 0 0 / 46%),
+    inset -8px -8px 16px rgb(56 62 69 / 46%);
+}
+.progress_bar {
+  height: 100%;
+  border-radius: 14px;
+  position: relative;
+  background: linear-gradient(145deg, #6a67ce 0%, #fc636b 100%);
+}
+.progress_percent {
+  position: absolute;
+  right: 0;
+  top: -22px;
+  font-weight: 400;
+  color: #c3cedd;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  left: inherit;
+  width: min-content;
+}
+@media (max-width: 1123px) {
+  .skill {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill {
+    max-width: 90%;
+  }
+  .skillsBlock_title {
+    font-size: 30px;
+  }
+  .skill_title {
+    font-size: 10px;
+  }
+  .progress_percent {
+    font-size: 10px;
+  }
+  .skill_icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 @media (max-width: 768px) {
   .skillsBlock_content {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .skill {
+    max-width: 100%;
   }
 }
