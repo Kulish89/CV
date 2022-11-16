@@ -17,10 +17,7 @@ const Footer = () => {
               </a>
             </li>
             <li className={s.footer_listItem}>
-              <a
-                href="mailto:andreykulish89@gmail.com"
-                className={s.footer_link}
-              >
+              <a href="https://github.com/Kulish89" className={s.footer_link}>
                 <span>GIT</span> <img src={github} alt="" />
               </a>
             </li>
