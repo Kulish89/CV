@@ -13,7 +13,7 @@ const Footer = () => {
                 href="https://www.codewars.com/users/Kulish89"
                 className={s.footer_link}
               >
-                <span>Phone</span> <img src={codewars} alt="" />
+                <span>Codewars</span> <img src={codewars} alt="" />
               </a>
             </li>
             <li className={s.footer_listItem}>

@@ -29,8 +29,8 @@ export const Skills = () => {
     <section className={style.skillsBlock} id="skills">
       <div className={`wrapper ${style.skillBlock_wrapper}`}>
         <div>
-          <p className={style.skillsBlock_subtitle}>my knowledges</p>
-          <h2 className={style.skillsBlock_title}>My development skill</h2>
+          <p className={style.skillsBlock_subtitle}>my knowledge</p>
+          <h2 className={style.skillsBlock_title}>My development skills</h2>
         </div>
         <div className={style.skillsBlock_content}>
           {skills.map((skill, index) => (
