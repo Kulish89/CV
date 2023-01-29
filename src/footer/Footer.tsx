@@ -1,4 +1,4 @@
-import s from "./Footer.module.css";
+import s from "./Footer.module.scss";
 import codewars from "../assets/images/codewars-icon.svg";
 import github from "../assets/images/github-icon.svg";
 import linkedin from "../assets/images/linkedin-icon.svg";

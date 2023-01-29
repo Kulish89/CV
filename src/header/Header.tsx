@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import s from "./Header.module.css";
+import s from "./Header.module.scss";
 import logo from "../assets/images/myPhotoForLogo.jpg";
 import { useLocation } from "react-router-dom";
 function Header() {

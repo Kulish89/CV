@@ -1,16 +1,15 @@
 .footer {
   font-family: "Montserrat";
-}
-
-.footer_content {
-  padding: 20px 20px;
-  height: auto;
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  border-radius: 10px;
-  background-color: #212428;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .footer_content {
+    padding: 20px 20px;
+    height: auto;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    border-radius: 10px;
+    background-color: #212428;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer_list {

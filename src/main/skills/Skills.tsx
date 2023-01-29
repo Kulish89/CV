@@ -1,6 +1,6 @@
 import React from "react";
 import { Skill } from "./Skill";
-import style from "./Skills.module.css";
+import style from "./Skills.module.scss";
 import html from "../../assets/images/html-icon.svg";
 import css from "../../assets/images/css-icon.svg";
 import js from "../../assets/images/js-icon.svg";

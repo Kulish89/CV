@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./About.module.css";
+import style from "./About.module.scss";
 import mainPhoto from "../../assets/images/myphoto.jpg";
 export const About = () => {
   return (

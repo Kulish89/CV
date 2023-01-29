@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Works.module.css";
+import style from "./Works.module.scss";
 
 type WorkPropsType = {
   title: string;

@@ -1,6 +1,6 @@
 import React from "react";
 import { title } from "process";
-import style from "./Skills.module.css";
+import style from "./Skills.module.scss";
 
 type SkillPropsType = {
   title: string;
