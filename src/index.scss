@@ -1,3 +1,5 @@
+@import "./assets/style/sass/variables.scss";
+
 @font-face {
   font-family: "Poppins";
   src: url("./assets/fonts/poppins/Poppins-Regular.ttf") format("ttf"),
@@ -81,7 +83,7 @@ html {
 }
 body {
   text-align: center;
-  background-color: #212428;
+  background-color: $appBackgroundColor;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Poppins",
     "Montserrat" sans-serif;

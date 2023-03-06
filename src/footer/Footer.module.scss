@@ -1,61 +1,60 @@
+@import "../assets/style/sass/variables.scss";
+@import "../assets/style/sass/mixins.scss";
+
 .footer {
   font-family: "Montserrat";
-  .footer_content {
-    padding: 20px 20px;
-    height: auto;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    border-radius: 10px;
-    background-color: #212428;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .footer_wrapper {
+    @include wrapper;
+    .footer_content {
+      padding: 20px 20px;
+      height: auto;
+      box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+      border-radius: 10px;
+      background-color: $appBackgroundColor;
+      @include flex(row, center, center, wrap);
+      .footer_list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .footer_listItem {
+          .footer_link {
+            color: white;
+            text-decoration: none;
+            @include flex(column, center, center, wrap);
+            gap: 5px;
+            transition: 0.4s all ease-in-out;
+            img {
+              width: 30px;
+              fill: $accentColor;
+              @media (max-width: 768px) {
+                width: 20px;
+              }
+            }
+            span {
+              transition: 0.4s;
+              color: $titleColor;
+              font-weight: 400;
+              @media (max-width: 768px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-.footer_list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-
-.footer_link {
-  color: white;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  align-items: center;
-  transition: 0.4s all ease-in-out;
-}
-.footer_link img {
-  width: 30px;
-  fill: #ff014f;
-}
-.footer_link span {
-  transition: 0.4s;
-  color: #c4cfde;
-  font-weight: 400;
-}
 .footer_link:hover span {
-  color: #ff014f;
+  color: $accentColor;
 }
 .footer_content:hover .footer_link {
   transform: scale(1.07, 1.07);
-}
-@media (max-width: 768px) {
-  .footer_list {
-    width: 100%;
-  }
-  .footer_link img {
-    width: 20px;
-  }
-  .footer_link span {
-    font-size: 12px;
-  }
 }

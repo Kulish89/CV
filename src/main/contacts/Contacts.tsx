@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MyForm from "../../MyForm";
-import style from "./Contacts.module.css";
+import style from "./Contacts.module.scss";
 import contact from "../../assets/images/contact.png";
 
 export const Contacts = () => {
@@ -8,9 +8,7 @@ export const Contacts = () => {
   return (
     <section className={style.contacts} id="contacts">
       <div
-        className={`wrapper ${style.contacts_wrapper} ${
-          isSending && style.sending
-        }`}
+        className={`${style.contacts_wrapper} ${isSending && style.sending}`}
       >
         <p className={style.contacts_subtitle}>send message</p>
         <h2 className={style.contacts_title}>Contact with me</h2>

@@ -1,3 +1,6 @@
+@import "../../assets/style/sass/variables.scss";
+@import "../../assets/style/sass/mixins.scss";
+
 .about {
   font-family: "Montserrat";
   padding: 40px 0;
@@ -9,12 +12,11 @@
   }
 
   .about_wrapper {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    @include wrapper;
+    @include flex(row, space-between, stretch, wrap);
     @media (max-width: 1123px) {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flex(row, center, center, wrap);
       gap: 20px;
     }
     .aboutDescription {
@@ -34,14 +36,14 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         font-weight: 500;
-        color: #c4cfde;
+        color: $firstSubtitleColor;
       }
       .aboutDescription_title {
         font-weight: 700;
         font-size: 50px;
         line-height: 62px;
         span {
-          color: #ff014f;
+          color: $accentColor;
         }
         @media (max-width: 768px) {
           font-size: 30px;

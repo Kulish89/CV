@@ -5,7 +5,7 @@ import linkedin from "../assets/images/linkedin-icon.svg";
 const Footer = () => {
   return (
     <footer className={s.footer}>
-      <div className={"wrapper " + s.footer_wrapper}>
+      <div className={s.footer_wrapper}>
         <div className={s.footer_content}>
           <ul className={s.footer_list}>
             <li className={s.footer_listItem}>

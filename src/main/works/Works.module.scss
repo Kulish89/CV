@@ -1,15 +1,18 @@
+@import "../../assets/style/sass/variables.scss";
+@import "../../assets/style/sass/mixins.scss";
 .worksBlock {
   font-family: "Montserrat";
   padding: 60px 0;
   border-bottom: solid 1px black;
   .worksBlock_wrapper {
+    @include wrapper;
     display: flex;
     flex-direction: column;
     gap: 40px;
     .worksBlock_subtitle {
       font-size: 14px;
       text-transform: uppercase;
-      color: #f9004d;
+      color: $secondSubtitleColor;
       letter-spacing: 1px;
       line-height: 14px;
       margin: 0;
@@ -18,16 +21,22 @@
       font-size: 50px;
       font-weight: 700;
       line-height: 1.2;
-      color: #c4cfde;
+      color: $titleColor;
       margin: 0px;
       padding: 0;
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     .worksBlock_content {
       width: 100%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
+      @include flex(row, space-around, stretch, wrap);
       gap: 40px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
     }
   }
 }
@@ -38,6 +47,13 @@
   flex: 0 1 40%;
   display: flex;
   border-radius: 10px;
+  background-color: #212428;
+  @media (max-width: 768px) {
+    max-width: 75%;
+  }
+  @media (max-width: 450px) {
+    max-width: 90%;
+  }
   .inner {
     padding: 30px;
     position: relative;
@@ -58,7 +74,6 @@
         text-decoration: none;
         transition: all 0.4s ease-in-out 0s;
         outline: none;
-        background-color: transparent;
         cursor: pointer;
         line-height: 0;
         img {
@@ -120,47 +135,26 @@
   font-style: normal;
 }
 .description_link i::before {
-  color: #c4cfde;
+  color: $titleColor;
   transition: 0.4s all ease-in-out;
   content: "<";
   text-transform: uppercase;
 }
 .description_link:hover {
-  color: #ff014f;
+  color: $accentColor;
 }
 .description_link:hover i {
   opacity: 1;
   top: 0px;
 }
 .description_link:hover i::before {
-  color: #ff014f;
+  color: $accentColor;
 }
 .description_text {
   margin: 0;
-  color: #c4cfde;
+  color: $titleColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.6;
   text-transform: uppercase;
-}
-
-/* ========================================================================== */
-
-@media (max-width: 768px) {
-  .worksBlock_content {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  .work {
-    max-width: 75%;
-  }
-  .worksBlock_title {
-    font-size: 30px;
-  }
-}
-@media (max-width: 450px) {
-  .work {
-    max-width: 90%;
-  }
 }

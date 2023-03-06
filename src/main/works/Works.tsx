@@ -66,7 +66,7 @@ const myWorks = [
 export const Works = () => {
   return (
     <section className={style.worksBlock} id="projects">
-      <div className={`wrapper ${style.worksBlock_wrapper}`}>
+      <div className={style.worksBlock_wrapper}>
         <div>
           <p className={style.worksBlock_subtitle}>my projects</p>
           <h2 className={style.worksBlock_title}>My works</h2>

@@ -1,16 +1,17 @@
+@import "../../assets/style/sass/variables.scss";
+@import "../../assets/style/sass/mixins.scss";
 .skillsBlock {
   font-family: "Montserrat";
   padding: 40px 0;
   border-bottom: solid 1px black;
   .skillBlock_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include wrapper;
+    @include flex(column, center, center, wrap);
     gap: 30px;
     .skillsBlock_subtitle {
       font-size: 14px;
       text-transform: uppercase;
-      color: #f9004d;
+      color: $secondSubtitleColor;
       letter-spacing: 1px;
       line-height: 14px;
       margin: 0;
@@ -19,7 +20,7 @@
       font-size: 50px;
       font-weight: 700;
       line-height: 1.2;
-      color: #c4cfde;
+      color: $titleColor;
       margin: 0px;
       padding: 0;
       @media (max-width: 768px) {
@@ -84,7 +85,7 @@
     font-size: 14px;
     border-radius: 10px;
     padding: 3px;
-    background: #212428;
+    background: $appBackgroundColor;
     box-shadow: inset 8px 8px 16px rgb(0 0 0 / 46%),
       inset -8px -8px 16px rgb(56 62 69 / 46%);
     .progress_bar {

@@ -1,0 +1,14 @@
+@mixin flex($direction, $justifyContent, $alignItems, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $wrap;
+}
+
+@mixin wrapper() {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}

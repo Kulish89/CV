@@ -27,7 +27,7 @@ const skills = [
 export const Skills = () => {
   return (
     <section className={style.skillsBlock} id="skills">
-      <div className={`wrapper ${style.skillBlock_wrapper}`}>
+      <div className={style.skillBlock_wrapper}>
         <div>
           <p className={style.skillsBlock_subtitle}>my knowledge</p>
           <h2 className={style.skillsBlock_title}>My development skills</h2>

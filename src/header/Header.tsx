@@ -7,7 +7,7 @@ function Header() {
   const [visibleMenu, setVisibleMenu] = useState<boolean>(false);
   return (
     <header className={s.header} id="header">
-      <div className={`wrapper ${s.header_wrapper}`}>
+      <div className={s.header_wrapper}>
         <div className={s.header_logo}>
           <div className={s.header_img}>
             <img src={logo} alt="avatar" />

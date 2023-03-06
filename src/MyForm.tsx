@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { Formik, Form, Field, ErrorMessage, useFormik } from "formik";
-import style from "./main/contacts/Contacts.module.css";
+import style from "./main/contacts/Contacts.module.scss";
 import TextareaAutosize from "react-textarea-autosize";
 
 type FormValuesType = {
